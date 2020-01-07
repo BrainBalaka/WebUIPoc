@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Apps\**" />
+    <Content Remove="Apps\**" />
+    <EmbeddedResource Remove="Apps\**" />
+    <None Remove="Apps\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Admin\Admin.csproj" />
     <ProjectReference Include="..\API\API.csproj" />
     <ProjectReference Include="..\Web\Web.csproj" />
